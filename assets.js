@@ -77,7 +77,7 @@ function atualizaTabuleiro() { // será chamada após uma jogada. percorre as ma
         tabuleiroVisual[lin][col].innerHTML = "X";
         tabuleiroVisual[lin][col].style.cursor = "default";
       } else if (jogoControle[lin][col] == "O") {
-        tabuleiroVisual[lin][col].innerHTML = "0";
+        tabuleiroVisual[lin][col].innerHTML = "O";
         tabuleiroVisual[lin][col].style.cursor = "default";
       } else {
         tabuleiroVisual[lin][col].innerHTML = "";
@@ -93,7 +93,7 @@ function atualizaTabuleiro() { // será chamada após uma jogada. percorre as ma
 function iniciar() {
     jogando = true;
     jogadaMaquina = 1;
-    jogo = [
+    jogoControle = [
         ["","",""],
         ["","",""],
         ["","",""]
