@@ -12,8 +12,8 @@ function maquinaJoga() {
     var l,c;
     if(nivel==1) {
       do{
-          l = Math.round(Math.random()*2));
-          c = Math.round(Math.random()*2));
+          l = Math.round(Math.random()*2);
+          c = Math.round(Math.random()*2);
       } while(jogoControle[l][c]!="");
         jogoControle[l][c]="O";
     } else if(nivel==2) {
