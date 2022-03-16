@@ -174,6 +174,17 @@ function iniciar() {
         [document.getElementById("p4"), document.getElementById("p5"), document.getElementById("p6")],
         [document.getElementById("p7"), document.getElementById("p8"), document.getElementById("p9")]
     ];
+    atualizaTabuleiro();
+    if(quemComeca == 1) {
+      quemComeca = 0;
+      quemJoga = quemComeca;
+      document.getElementById("div-quem-comeca").innerHTML = "Quem começa: Jogador";
+    } else {
+      quemComeca = 1;
+      quemJoga = quemComeca;
+      document.getElementById("div-quem-comeca").innerHTML = "Quem começa: Máquina";
+      maquinaJoga();
+    }
 };
 
 window.addEventListener("load", iniciar); // começa com a página inicia
