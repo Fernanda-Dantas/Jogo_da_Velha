@@ -16,8 +16,6 @@ function maquinaJoga() {
           c = Math.round(Math.random()*2);
       } while(jogoControle[l][c]!="");
         jogoControle[l][c]="O";
-    } else if(nivel==2) {
-
     }
     verifica = verificaVitoria();
     if (verifica != "") {
